@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clay Lane — Handcrafted Polymer Clay Earrings</title>
+  <meta name="description" content="Handcrafted polymer clay earrings, made with love by Clay Lane.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announce">Free delivery on orders over R600 · Handmade in small batches</div>
+
+  <header class="site-header">
+    <button class="icon-btn menu-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <a href="#top" class="brand"><img src="Clay Lane Logo.jpeg" alt="Clay Lane logo"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="shop.html">Shop</a>
+      <a href="#story">Our Story</a>
+      <a href="#care">Care</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" id="open-cart" aria-label="Open cart">Cart <span id="cart-count">0</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Handcrafted polymer clay earrings</p>
+        <h1>Small things,<br><em>made with love.</em></h1>
+        <p class="lead">Lightweight statement earrings, shaped and finished by hand.</p>
+        <a href="shop.html" class="btn">Shop the collection</a>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 80" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <defs>
+          <linearGradient id="divFade" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="1160" y2="0">
+            <stop offset="0" stop-color="#141414" stop-opacity="0"/>
+            <stop offset=".22" stop-color="#141414" stop-opacity=".85"/>
+            <stop offset=".78" stop-color="#141414" stop-opacity=".85"/>
+            <stop offset="1" stop-color="#141414" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <g stroke="url(#divFade)" stroke-width="1.3">
+          <path d="M40 46 C110 38 160 52 240 44 S350 36 420 43 S480 47 538 41"/>
+          <path d="M120 44 C200 50 270 38 350 45 S450 50 520 42" stroke-width=".7"/>
+          <path d="M662 41 C720 47 780 36 850 43 S950 50 1030 44 S1110 38 1160 46"/>
+          <path d="M680 42 C750 50 830 40 910 46 S1030 40 1090 45" stroke-width=".7"/>
+        </g>
+        <g stroke="#141414" stroke-width="1.3">
+          <path d="M538 41 C560 36 580 44 600 40 C620 36 640 44 662 41"/>
+          <path d="M600 40 C598 28 604 18 612 9"/>
+          <path d="M601 31 C586 28 580 18 586 11 C596 14 601 22 601 31Z"/>
+          <path d="M604 24 C618 22 626 14 624 6 C614 8 606 15 604 24Z"/>
+          <path d="M583 43 C574 52 574 62 581 69 C589 63 590 52 583 43Z"/>
+          <path d="M621 43 C632 51 634 61 628 68 C619 62 616 52 621 43Z"/>
+          <path d="M586 31 L589 22 M601 31 L601 40" stroke-width=".7"/>
+        </g>
+        <g stroke="#aa8558" stroke-width="1.2">
+          <circle cx="612" cy="7" r="3.2"/>
+          <circle cx="571" cy="40" r="2.2"/>
+          <circle cx="632" cy="40" r="2.2"/>
+          <circle cx="600" cy="40" r="1.2" fill="#aa8558"/>
+        </g>
+      </svg>
+    </div>
+
+    <section id="shop" class="section featured-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">A few favourites</p>
+          <h2>Featured pieces</h2>
+        </div>
+      </div>
+      <div class="grid" id="product-grid" data-featured="true"></div>
+      <div class="featured-cta"><a class="btn" href="shop.html">Shop all products</a></div>
+    </section>
+
+    <section class="atelier">
+      <div class="atelier-copy">
+        <p class="eyebrow">A little more personal</p>
+        <h2>Nature, shaped<br>by hand.</h2>
+        <p>Inspired by petals, winding stems and the quiet beauty of handmade things. Each piece carries its own little variation.</p>
+        <a href="#story" class="text-link">Discover the Clay Lane story <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="botanical-art" aria-hidden="true">
+        <img class="atelier-photo" src="SomethingPersonal%20whiteflower-three-tier.png" alt="" loading="lazy">
+        <span class="art-caption">Petals, pressed in clay</span>
+      </div>
+    </section>
+
+    <section id="story" class="section story">
+      <div>
+        <p class="eyebrow">Our story</p>
+        <h2>Shaped by hand, one pair at a time</h2>
+      </div>
+      <div>
+        <p>Every pair of Clay Lane earrings begins as a small block of polymer clay, blended into soft, earthy colours, cut, baked and finished by hand. No two pairs are ever exactly alike.</p>
+        <p>We design for everyday wear: light on the ear, gentle on the skin and made to be noticed.</p>
+      </div>
+    </section>
+
+    <section class="section perks">
+      <div><span class="petal-mark" aria-hidden="true">✳</span><h3>Handmade</h3><p>Crafted in small batches.</p></div>
+      <div><span class="petal-mark" aria-hidden="true">✳</span><h3>Lightweight</h3><p>Comfortable all day long.</p></div>
+      <div><span class="petal-mark" aria-hidden="true">✳</span><h3>Gift ready</h3><p>Packaged with care.</p></div>
+    </section>
+
+    <section id="care" class="section care">
+      <svg class="hand-frame" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M1.2 2.4C18 1.4 33 2.8 50 1.9S82 1.2 98.7 2.2C99.4 20 98.3 38 99 55S98.4 85 98.6 97.6C80 98.6 64 97.3 48 98.3S18 98.8 1.4 97.7C.8 78 1.9 60 1.1 43S1.6 16 1.2 2.4Z"/>
+        <path class="thin" d="M2.4 3.6C20 3 36 4 52 3.3S84 3.1 97.6 3.6C98.2 22 97.2 40 97.8 56S97.3 82 97.5 96.5C82 97.3 66 96.4 50 97.2S20 97.6 2.6 96.6C2 78 3 60 2.3 44S2.8 18 2.4 3.6Z"/>
+      </svg>
+      <svg class="care-girl" viewBox="0 0 160 200" aria-hidden="true">
+        <path d="M71 41C62 52 63 62 60 72C57 76 54 80 58 82C60 84 60 86 58 88C60 92 60 94 58 97C62 101 68 104 77 104"/>
+        <path d="M71 41C75 21 104 14 118 34C131 53 124 80 111 97"/>
+        <path d="M80 35C93 26 108 33 112 51M86 44C95 40 104 45 106 56M91 52C96 50 101 55 102 62"/>
+        <path d="M110 24C114 10 134 12 134 27C134 40 118 42 112 34"/>
+        <path d="M77 104C79 120 77 135 71 150M111 97C110 121 114 137 124 150"/>
+        <path d="M30 192C38 163 58 153 71 150M124 150C141 158 151 173 155 192"/>
+        <path d="M65 64Q70 61 75 64M64 58Q70 55 76 57M72 66Q70 68 66 67"/>
+        <path d="M58 89Q55 91 58 93M98 70C92 66 92 84 99 82"/>
+        <path class="gold" d="M99 86v5"/>
+        <circle class="gold-fill" cx="99" cy="95" r="4.5"/>
+        <path class="gold" d="M133 100c8 6 12 14 12 24M138 112c6 2 10 6 12 12"/>
+      </svg>
+      <h2>Caring for your earrings</h2>
+      <ul>
+        <li>Keep away from water, perfume and harsh chemicals.</li>
+        <li>Wipe gently with a soft, dry cloth.</li>
+        <li>Store flat or hanging, away from direct sunlight.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Let's have a chat about your dream design</h2>
+      <p>Have a colour, shape or occasion in mind? Tell us about it and we'll make it by hand.</p>
+      <a class="btn" href="#contact-form">Start the conversation</a>
+    </section>
+
+    <section id="contact-form" class="section contact contact-form-section">
+      <form id="contact-form-el" class="contact-form">
+        <label>Your name<input type="text" name="name" required autocomplete="name"></label>
+        <label>Email address<input type="email" name="email" required autocomplete="email"></label>
+        <label>Tell us about your dream design<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+        <p class="form-msg" id="contact-msg" role="status"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="divider footer-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 80" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <defs>
+          <linearGradient id="divFade2" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="1160" y2="0">
+            <stop offset="0" stop-color="#141414" stop-opacity="0"/>
+            <stop offset=".22" stop-color="#141414" stop-opacity=".85"/>
+            <stop offset=".78" stop-color="#141414" stop-opacity=".85"/>
+            <stop offset="1" stop-color="#141414" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <g stroke="url(#divFade2)" stroke-width="1.3">
+          <path d="M40 46 C110 38 160 52 240 44 S350 36 420 43 S480 47 538 41"/>
+          <path d="M120 44 C200 50 270 38 350 45 S450 50 520 42" stroke-width=".7"/>
+          <path d="M662 41 C720 47 780 36 850 43 S950 50 1030 44 S1110 38 1160 46"/>
+          <path d="M680 42 C750 50 830 40 910 46 S1030 40 1090 45" stroke-width=".7"/>
+        </g>
+        <g stroke="#141414" stroke-width="1.3">
+          <path d="M538 41 C560 36 580 44 600 40 C620 36 640 44 662 41"/>
+          <path d="M600 40 C598 28 604 18 612 9"/>
+          <path d="M601 31 C586 28 580 18 586 11 C596 14 601 22 601 31Z"/>
+          <path d="M604 24 C618 22 626 14 624 6 C614 8 606 15 604 24Z"/>
+          <path d="M583 43 C574 52 574 62 581 69 C589 63 590 52 583 43Z"/>
+          <path d="M621 43 C632 51 634 61 628 68 C619 62 616 52 621 43Z"/>
+          <path d="M586 31 L589 22 M601 31 L601 40" stroke-width=".7"/>
+        </g>
+        <g stroke="#aa8558" stroke-width="1.2">
+          <circle cx="612" cy="7" r="3.2"/>
+          <circle cx="571" cy="40" r="2.2"/>
+          <circle cx="632" cy="40" r="2.2"/>
+          <circle cx="600" cy="40" r="1.2" fill="#aa8558"/>
+        </g>
+      </svg>
+    </div>
+    <img src="Clay%20Lane%20Logo.jpeg" alt="" class="foot-logo">
+    <p>© <span id="year"></span> Clay Lane · Handcrafted polymer clay earrings</p>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Your Cart</h2>
+      <button class="icon-btn" id="close-cart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="drawer-body" id="cart-items"></div>
+    <div class="drawer-foot">
+      <div class="row"><span>Subtotal</span><strong id="cart-subtotal">R0</strong></div>
+      <p class="small" id="ship-note"></p>
+      <button class="btn full" id="checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="modal" id="checkout-modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="icon-btn modal-close" id="close-checkout" aria-label="Close">✕</button>
+      <form id="checkout-form">
+        <h2>Checkout</h2>
+        <label>Full name<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Phone<input name="phone" type="tel" required></label>
+        <label>Delivery address<textarea name="address" rows="3" required></textarea></label>
+        <div class="row total-row"><span>Total (incl. delivery)</span><strong id="checkout-total"></strong></div>
+        <button class="btn full" type="submit">Place order</button>
+        <p class="small">Orders are confirmed by email with payment details (EFT).</p>
+      </form>
+      <div class="success" id="order-success" hidden>
+        <h2>Thank you!</h2>
+        <p id="order-msg"></p>
+        <button class="btn" id="done-btn">Continue shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="product-modal" aria-hidden="true">
+    <div class="modal-box wide" id="product-detail"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

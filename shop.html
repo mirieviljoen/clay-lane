@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Earrings — Clay Lane</title>
+  <meta name="description" content="Shop handcrafted polymer clay earrings from Clay Lane.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announce">Free delivery on orders over R600 · Handmade in small batches</div>
+
+  <header class="site-header">
+    <button class="icon-btn menu-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <a href="index.html" class="brand"><img src="Clay%20Lane%20Logo.jpeg" alt="Clay Lane logo"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="index.html#story">Our Story</a>
+      <a href="index.html#care">Care</a>
+    </nav>
+    <button class="cart-btn" id="open-cart" aria-label="Open cart">Cart <span id="cart-count">0</span></button>
+  </header>
+
+  <section class="shop-hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Made by hand, made to be yours</p>
+      <h1>Shop the collection</h1>
+      <p class="lead">Find your favourite shape, colour and little everyday statement.</p>
+    </div>
+  </section>
+
+  <main class="shop-page">
+    <section class="section shop-section" aria-label="Shop products">
+      <div class="shop-toolbar">
+        <div class="filters" role="group" aria-label="Filter products">
+          <button class="chip active" data-filter="all" aria-pressed="true">View all</button>
+          <button class="chip" data-filter="floral" aria-pressed="false">Floral</button>
+          <button class="chip" data-filter="studs" aria-pressed="false">Studs</button>
+          <button class="chip" data-filter="dangles" aria-pressed="false">Dangles</button>
+        </div>
+        <p class="product-count" id="product-count" aria-live="polite"></p>
+      </div>
+      <div class="grid" id="product-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="Clay%20Lane%20Logo.jpeg" alt="" class="foot-logo">
+    <p>© <span id="year"></span> Clay Lane · Handcrafted polymer clay earrings</p>
+    <a class="footer-home" href="index.html">Back to home</a>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Your Cart</h2>
+      <button class="icon-btn" id="close-cart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="drawer-body" id="cart-items"></div>
+    <div class="drawer-foot">
+      <div class="row"><span>Subtotal</span><strong id="cart-subtotal">R0</strong></div>
+      <p class="small" id="ship-note"></p>
+      <button class="btn full" id="checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="modal" id="checkout-modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="icon-btn modal-close" id="close-checkout" aria-label="Close">✕</button>
+      <form id="checkout-form">
+        <h2>Checkout</h2>
+        <label>Full name<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Phone<input name="phone" type="tel" required></label>
+        <label>Delivery address<textarea name="address" rows="3" required></textarea></label>
+        <div class="row total-row"><span>Total (incl. delivery)</span><strong id="checkout-total"></strong></div>
+        <button class="btn full" type="submit">Place order</button>
+        <p class="small">Orders are confirmed by email with payment details (EFT).</p>
+      </form>
+      <div class="success" id="order-success" hidden>
+        <h2>Thank you!</h2>
+        <p id="order-msg"></p>
+        <button class="btn" id="done-btn">Continue shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="product-modal" aria-hidden="true">
+    <div class="modal-box wide" id="product-detail"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
