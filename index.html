@@ -18,8 +18,8 @@
     <a href="#top" class="brand"><img src="Clay Lane Logo.jpeg" alt="Clay Lane logo"></a>
     <nav class="nav" aria-label="Main">
       <a href="shop.html">Shop</a>
-      <a href="#story">Our Story</a>
       <a href="#care">Care</a>
+      <a href="#story">Our Story</a>
       <a href="#contact">Contact</a>
     </nav>
     <button class="cart-btn" id="open-cart" aria-label="Open cart">Cart <span id="cart-count">0</span></button>
@@ -28,10 +28,8 @@
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Handcrafted polymer clay earrings</p>
-        <h1>Small things,<br><em>made with love.</em></h1>
+        <h1 class="eyebrow">Handcrafted polymer clay earrings</h1>
         <p class="lead">Lightweight statement earrings, shaped and finished by hand.</p>
-        <a href="shop.html" class="btn">Shop the collection</a>
       </div>
     </section>
 
@@ -69,64 +67,10 @@
       </svg>
     </div>
 
-    <section id="shop" class="section featured-section">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">A few favourites</p>
-          <h2>Featured pieces</h2>
-        </div>
-      </div>
-      <div class="grid" id="product-grid" data-featured="true"></div>
-      <div class="featured-cta"><a class="btn" href="shop.html">Shop all products</a></div>
-    </section>
-
-    <section class="atelier">
-      <div class="atelier-copy">
-        <p class="eyebrow">A little more personal</p>
-        <h2>Nature, shaped<br>by hand.</h2>
-        <p>Inspired by petals, winding stems and the quiet beauty of handmade things. Each piece carries its own little variation.</p>
-        <a href="#story" class="text-link">Discover the Clay Lane story <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="botanical-art" aria-hidden="true">
-        <img class="atelier-photo" src="SomethingPersonal%20whiteflower-three-tier.png" alt="" loading="lazy">
-        <span class="art-caption">Petals, pressed in clay</span>
-      </div>
-    </section>
-
-    <section id="story" class="section story">
-      <div>
-        <p class="eyebrow">Our story</p>
-        <h2>Shaped by hand, one pair at a time</h2>
-      </div>
-      <div>
-        <p>Every pair of Clay Lane earrings begins as a small block of polymer clay, blended into soft, earthy colours, cut, baked and finished by hand. No two pairs are ever exactly alike.</p>
-        <p>We design for everyday wear: light on the ear, gentle on the skin and made to be noticed.</p>
-      </div>
-    </section>
-
-    <section class="section perks">
-      <div><span class="petal-mark" aria-hidden="true">✳</span><h3>Handmade</h3><p>Crafted in small batches.</p></div>
-      <div><span class="petal-mark" aria-hidden="true">✳</span><h3>Lightweight</h3><p>Comfortable all day long.</p></div>
-      <div><span class="petal-mark" aria-hidden="true">✳</span><h3>Gift ready</h3><p>Packaged with care.</p></div>
-    </section>
-
     <section id="care" class="section care">
       <svg class="hand-frame" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
         <path d="M1.2 2.4C18 1.4 33 2.8 50 1.9S82 1.2 98.7 2.2C99.4 20 98.3 38 99 55S98.4 85 98.6 97.6C80 98.6 64 97.3 48 98.3S18 98.8 1.4 97.7C.8 78 1.9 60 1.1 43S1.6 16 1.2 2.4Z"/>
         <path class="thin" d="M2.4 3.6C20 3 36 4 52 3.3S84 3.1 97.6 3.6C98.2 22 97.2 40 97.8 56S97.3 82 97.5 96.5C82 97.3 66 96.4 50 97.2S20 97.6 2.6 96.6C2 78 3 60 2.3 44S2.8 18 2.4 3.6Z"/>
-      </svg>
-      <svg class="care-girl" viewBox="0 0 160 200" aria-hidden="true">
-        <path d="M71 41C62 52 63 62 60 72C57 76 54 80 58 82C60 84 60 86 58 88C60 92 60 94 58 97C62 101 68 104 77 104"/>
-        <path d="M71 41C75 21 104 14 118 34C131 53 124 80 111 97"/>
-        <path d="M80 35C93 26 108 33 112 51M86 44C95 40 104 45 106 56M91 52C96 50 101 55 102 62"/>
-        <path d="M110 24C114 10 134 12 134 27C134 40 118 42 112 34"/>
-        <path d="M77 104C79 120 77 135 71 150M111 97C110 121 114 137 124 150"/>
-        <path d="M30 192C38 163 58 153 71 150M124 150C141 158 151 173 155 192"/>
-        <path d="M65 64Q70 61 75 64M64 58Q70 55 76 57M72 66Q70 68 66 67"/>
-        <path d="M58 89Q55 91 58 93M98 70C92 66 92 84 99 82"/>
-        <path class="gold" d="M99 86v5"/>
-        <circle class="gold-fill" cx="99" cy="95" r="4.5"/>
-        <path class="gold" d="M133 100c8 6 12 14 12 24M138 112c6 2 10 6 12 12"/>
       </svg>
       <h2>Caring for your earrings</h2>
       <ul>
@@ -134,6 +78,30 @@
         <li>Wipe gently with a soft, dry cloth.</li>
         <li>Store flat or hanging, away from direct sunlight.</li>
       </ul>
+    </section>
+
+    <section class="section perks" aria-labelledby="perks-title">
+      <div class="perks-heading">
+        <p class="eyebrow">Made with care</p>
+        <h2 id="perks-title">The little things matter</h2>
+      </div>
+      <div class="perks-grid">
+        <article class="perk-card">
+          <span class="petal-mark" aria-hidden="true">✿</span>
+          <h3>Handmade, always</h3>
+          <p>Shaped by hand in small batches.</p>
+        </article>
+        <article class="perk-card">
+          <span class="petal-mark" aria-hidden="true">✿</span>
+          <h3>Light as a petal</h3>
+          <p>Lightweight comfort, all day.</p>
+        </article>
+        <article class="perk-card">
+          <span class="petal-mark" aria-hidden="true">✿</span>
+          <h3>Ready to delight</h3>
+          <p>Thoughtfully wrapped for gifting.</p>
+        </article>
+      </div>
     </section>
 
     <section id="contact" class="section contact">
@@ -150,6 +118,22 @@
         <button class="btn" type="submit">Send message</button>
         <p class="form-msg" id="contact-msg" role="status"></p>
       </form>
+    </section>
+
+    <section id="story" class="section story">
+      <div>
+        <p class="eyebrow">Our story</p>
+        <h2>Shaped by hand, one pair at a time</h2>
+      </div>
+      <div>
+        <p>JJust a girl with big dreams, learning to bloom like a sunflower—reaching for the sunshine and finding joy in the little things.</p>
+
+        <p>Clay Lane is where my creativity takes root. Each pair of earrings is shaped, baked and finished by hand, bringing my favourite colours and designs to life. 
+          <br>
+          They’re my little favourites, made to bring a touch of sunshine to your everyday.</p>
+
+        
+      </div>
     </section>
 
   </main>

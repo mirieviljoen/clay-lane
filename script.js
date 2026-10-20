@@ -59,6 +59,7 @@
   // Products
   const grid = $("#product-grid");
   function renderProducts(filter = "all") {
+    if (!grid) return;
     const isFeatured = grid.dataset.featured === "true";
     const featuredIds = [1, 4, 7];
     const products = PRODUCTS.filter(p => (filter === "all" || p.cat === filter) && (!isFeatured || featuredIds.includes(p.id)));
@@ -87,7 +88,7 @@
     renderProducts(chip.dataset.filter);
   });
 
-  grid.addEventListener("click", e => {
+  if (grid) grid.addEventListener("click", e => {
     const add = e.target.closest("[data-add]");
     const view = e.target.closest("[data-view]");
     if (add) { addToCart(+add.dataset.add); openCart(); }

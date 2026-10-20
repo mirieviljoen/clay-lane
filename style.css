@@ -141,11 +141,16 @@ button { font: inherit; cursor: pointer; }
 .story > div { max-width: 440px; }
 .story::before { content: ""; position: absolute; z-index: -1; top: 0; bottom: 0; right: 0; width: 58%; background: url("OurStory%20black%20circle-halfcircle-drop.png") center / cover no-repeat; mix-blend-mode: multiply; -webkit-mask-image: radial-gradient(closest-side, #000 55%, transparent 100%); mask-image: radial-gradient(closest-side, #000 55%, transparent 100%); pointer-events: none; }
 .story::after { content: ""; position: absolute; top: 1.3rem; right: 1.5rem; width: 42px; height: 42px; border: 1px solid #d7bba2; border-radius: 50% 50% 48% 52%; box-shadow: inset 0 0 0 5px var(--ivory), inset 0 0 0 6px #d7bba2; opacity: .8; }
-.perks { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; gap: 2rem; }
-.petal-mark { display: block; color: var(--clay); font-family: var(--serif); font-size: 1.8rem; line-height: 1; margin-bottom: .75rem; }
-.perks h3 { font-size: 1.5rem; }
-.perks p { color: var(--muted); }
-.care { text-align: center; background: var(--ivory-2); max-width: none; }
+.perks { max-width: 800px; }
+.perks-heading { max-width: 600px; margin: 0 auto 1.75rem; text-align: center; }
+.perks-heading .eyebrow { margin-bottom: .4rem; }
+.perks-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.perk-card { position: relative; overflow: hidden; padding: 1.35rem 1rem; text-align: center; background: linear-gradient(145deg, #fffaf4, var(--ivory-2)); border: 1px solid var(--line); }
+.perk-card::before { content: ""; position: absolute; top: 0; left: 50%; width: 3rem; height: 2px; background: var(--gold); transform: translateX(-50%); }
+.petal-mark { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; margin: 0 auto .7rem; border: 1px solid #d7bba2; border-radius: 50%; background: var(--ivory); color: var(--clay); font-size: 1.15rem; line-height: 1; }
+.perk-card h3 { margin-bottom: .3rem; font-size: 1.25rem; }
+.perk-card p { max-width: 18rem; margin: 0 auto; color: var(--muted); font-size: .9rem; line-height: 1.5; }
+.care { text-align: center; background-color: var(--ivory-2); background-image: url("Caring%20black%20circle-doublecircle-drop.png"); background-position: right bottom; background-repeat: no-repeat; background-size: clamp(220px, 28vw, 380px) auto; background-blend-mode: multiply; max-width: none; }
 .care h2::after, .contact h2::after { content: ""; display: block; width: 58px; height: 1px; margin: 1rem auto 0; background: var(--gold); }
 .care h2::before, .contact h2::before { content: "✿"; display: block; color: var(--clay); font-size: 1rem; margin-bottom: .6rem; }
 .care { position: relative; overflow: hidden; }
@@ -157,10 +162,7 @@ button { font: inherit; cursor: pointer; }
 .hand-frame { position: absolute; inset: 1rem; width: calc(100% - 2rem); height: calc(100% - 2rem); fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; pointer-events: none; opacity: .85; }
 .hand-frame .thin { stroke: var(--gold); stroke-width: 1; opacity: .8; }
 .hand-frame path { vector-effect: non-scaling-stroke; }
-.care > .care-girl { position: absolute; z-index: 1; right: clamp(2rem, 6vw, 5rem); bottom: 1.1rem; width: clamp(110px, 12vw, 160px); fill: none; stroke: var(--ink); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; opacity: .8; pointer-events: none; }
-.care-girl .gold { stroke: var(--gold); }
-.care-girl .gold-fill { fill: var(--gold); stroke: none; }
-@media (max-width: 800px) { .care > .care-girl { width: 80px; right: 2.4rem; opacity: .55; } }
+@media (max-width: 800px) { .care { background-size: clamp(190px, 52vw, 260px) auto; } }
 .care li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
 .contact { text-align: center; }
 .contact { position: relative; }
@@ -220,13 +222,14 @@ input:focus, textarea:focus { outline: 1px solid var(--gold); border-color: var(
 
 @media (max-width: 800px) {
   .site-header { padding: .4rem 1rem; }
-  .menu-toggle { display: block; }
+  .menu-toggle { display: block; color: #000; }
+  .cart-btn, .cart-btn:hover { color: #000; }
   .brand { position: static; grid-column: 2; grid-row: 1; justify-self: center; }
   .brand img { height: 56px; width: 56px; }
   .nav { display: none; position: absolute; grid-column: 1 / -1; justify-self: stretch; top: 100%; left: 0; right: 0; background: var(--ivory); flex-direction: column; gap: 0; border-bottom: 1px solid var(--line); }
   .nav.open { display: flex; }
   .nav a { padding: 1rem 1.5rem; border-top: 1px solid var(--line); }
-  .story, .perks, .modal-box.wide { grid-template-columns: 1fr; }
+  .story, .perks-grid, .modal-box.wide { grid-template-columns: 1fr; }
   .story { min-height: 0; padding-top: 3rem; padding-bottom: 20rem; }
   .story > div { max-width: none; }
   .story::before { top: auto; left: 0; right: 0; width: auto; height: 20rem; }
